@@ -8,8 +8,4 @@ import { StyleBold, StyleColor, StyleDirevtive } from '../style.directive';
   standalone: true,
   imports: [StyleDirevtive],
 })
-export class HomeComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit() {}
-}
+export class HomeComponent {}
