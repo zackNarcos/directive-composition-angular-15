@@ -1,4 +1,4 @@
-import { Component, VERSION } from '@angular/core';
+import { Component, inject, VERSION } from '@angular/core';
 
 @Component({
   selector: 'my-app',

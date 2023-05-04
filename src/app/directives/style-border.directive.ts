@@ -1,8 +1,10 @@
 import {
   Directive,
   ElementRef,
+  EventEmitter,
   inject,
   OnInit,
+  Output,
   Renderer2,
 } from '@angular/core';
 
@@ -13,6 +15,12 @@ import {
 export class BoxDirective implements OnInit {
   renderer = inject(Renderer2);
   hostEl = inject(ElementRef).nativeElement;
+
+  @Output() borderEmitter = new EventEmitter();
+
+  onClick() {
+    this.borderEmitter.emit(true);
+  }
 
   color = 'green';
 

@@ -7,6 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { StyleColor } from './directives/style-color.directive';
 import { HelloComponent } from './hello/hello.component';
 
+import { HighlightDirective } from './directives/highlight.directive';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -15,6 +17,7 @@ import { HelloComponent } from './hello/hello.component';
     StyleColor,
     HomeComponent,
     HelloComponent,
+    HighlightDirective,
   ],
   declarations: [AppComponent],
   bootstrap: [AppComponent],
